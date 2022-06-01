@@ -1,0 +1,29 @@
+{
+  "name": "ip-info",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arnabb1swas/ip-info.git"
+  },
+  "author": "Arnab Biswas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arnabb1swas/ip-info/issues"
+  },
+  "homepage": "https://github.com/arnabb1swas/ip-info#readme",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
