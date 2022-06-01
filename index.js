@@ -7,8 +7,7 @@ const PORT = process.env.PORT || 5000;
 
 app.get('/', async (req, res) => {
     try {
- const ip = req.ip;
-// req.headers['x-forwarded-for']
+ const ip = req.headers['x-forwarded-for']
   // || req.socket.remoteAddress || null;
 
         // const ipData = await axios.get(`${process.env.IPURL}`);
