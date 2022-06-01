@@ -7,11 +7,12 @@ const PORT = process.env.PORT || 5000;
 
 app.get('/', async (req, res) => {
     try {
-// const ip = req.headers['x-forwarded-for'];
+ const ip = req.ip;
+// req.headers['x-forwarded-for']
   // || req.socket.remoteAddress || null;
 
         // const ipData = await axios.get(`${process.env.IPURL}`);
-        const userIpInfo = await axios.get(`${process.env.IPDETAILSURL}${req.ip}${process.env.IPDETAILSOPTIONS}`);
+        const userIpInfo = await axios.get(`${process.env.IPDETAILSURL}${ip}${process.env.IPDETAILSOPTIONS}`);
         res.json({
             success: true,
             message: "Successfully Retrieved User IP Information.",
